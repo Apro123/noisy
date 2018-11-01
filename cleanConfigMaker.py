@@ -34,9 +34,9 @@ with open('top-1m.csv', 'r') as csv_file:
 
         # using http.client to test whether the websites contain an ssl certificate
         try:
-            conn = http.client.HTTPSConnection(website)
-            conn.request("GET", "/")
-            r1 = conn.getresponse()
+            # conn = http.client.HTTPSConnection(website)
+            # conn.request("GET", "/")
+            # r1 = conn.getresponse()
             website = "https://" + website
         except:
             website = "http://" + website
